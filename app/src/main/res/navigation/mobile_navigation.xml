@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.ptit.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_xemtkb"
+        android:name="com.example.ptit.ui.xemtkb.XemtkbFragment"
+        android:label="Xem tkb"
+        tools:layout="@layout/fragment_xemtkb" />
+
+    <fragment
+        android:id="@+id/navigation_xemdiem"
+        android:name="com.example.ptit.ui.xemdiem.DiemFragment"
+        android:label="Xem điểm"
+        tools:layout="@layout/fragment_xemdiem" />
+    <fragment
+        android:id="@+id/navigation_logout"
+        android:name="com.example.ptit.ui.logout.LogoutFragment"
+        android:label="Đăng xuất"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
