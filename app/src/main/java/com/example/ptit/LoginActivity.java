@@ -1,24 +1,22 @@
 package com.example.ptit;
 
 import android.content.Intent;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.ptit.Database.SQLiteHelper;
 import com.example.ptit.model.User;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
     private TextInputEditText username, password;
     Button btnLogin;
     TextView txtRegis;
+
+    private final String[] MISSING_INPUT_WARNING = {"Vui lòng nhập tên đăng nhập", "Vui lòng nhập mật khẩu", "Vui lòng nhập username và password"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,45 +25,49 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.editPassword);
         btnLogin = findViewById(R.id.btnLogin);
         txtRegis = findViewById(R.id.txtRegis);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String user = username.getText().toString();
-                String pass = password.getText().toString();
-                if(user.isEmpty()){
-                    Toast toast = Toast.makeText(LoginActivity.this, "Vui lòng nhập tên đăng nhập", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
-                else if(pass.isEmpty()){
-                    Toast toast = Toast.makeText(LoginActivity.this, "Vui lòng nhập mật khẩu", Toast.LENGTH_SHORT);
-                    toast.show();
+
+        btnLogin.setOnClickListener(view -> {
+            String user = username.getText().toString();
+            String pass = password.getText().toString();
+            int check = checkLoginFields(user, pass);
+            if(check > 0){
+                Toast warning = Toast.makeText(LoginActivity.this, MISSING_INPUT_WARNING[check], Toast.LENGTH_SHORT);
+                warning.show();
+            }
+            else{
+                if(checkLogin(user,pass)){
+                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    startActivity(intent);
                 }
                 else{
-                    SQLiteHelper sqLiteHelper = new SQLiteHelper(LoginActivity.this);
-                    User users = sqLiteHelper.getUser(user);
-                    System.out.println("user: "+users.getUsername());
-                    System.out.println("pass: "+users.getPassword());
-                    if(users.getUsername()==null){
-                        Toast toast = Toast.makeText(LoginActivity.this, "Tên đăng nhập không tồn tại", Toast.LENGTH_SHORT);
-                        toast.show();
-                    }
-                    else if(users.getPassword().equals(pass)){
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                        startActivity(intent);
-                    }
-                    else{
-                        Toast toast = Toast.makeText(LoginActivity.this, "Mật khẩu không đúng", Toast.LENGTH_SHORT);
-                        toast.show();
-                    }
+                    Toast result = Toast.makeText(LoginActivity.this,"Sai thông tin tài khoản và mất khẩu", Toast.LENGTH_LONG);
+                    result.show();
                 }
             }
         });
-        txtRegis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
+        txtRegis.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
+
+    }
+    public int checkLoginFields(String username, String password){
+        if(username.isBlank() && password.isBlank()){
+            return 2;
+        }
+        else if (username.isBlank()){
+            return 0;
+        } else if (password.isBlank()) {
+            return 1;
+        }
+        else {
+            return -1;
+        }
+
+    }
+    public boolean checkLogin(String username, String password){
+        SQLiteHelper sqLiteHelper = new SQLiteHelper(LoginActivity.this);
+        User user = sqLiteHelper.getUser(username);
+        return password.equals(user.getPassword());
     }
 }
