@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.xemdiem.DiemFragment">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:maxHeight="200dp"
+            android:showDividers="middle|beginning|end"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="STT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="MM"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="TM"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="TC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%CC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%KT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%TH"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%BT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%Thi"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="Điểm CC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%ĐiềmKT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%ĐiểmTH"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="%ĐiểmBT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="ThiL1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="ThiL2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="TK(10)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:padding="1dp"
+                    android:text="TK(CH)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#1DA0F2"
+                    android:text="KQ"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="1"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="SKD1103"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Kỹ năng tạo lập Văn bản"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="1" />
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="20"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="60"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="B"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="INT1306"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Cấu trúc dữ liệu và giải thuật"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="20" />
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="60"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.6"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="C+"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="INT13145"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Kiến trúc máy tính"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="20"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="60"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="6.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.6"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.8"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="C+"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="4"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="ELE1319"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Lý thuyết thông tin"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="20"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="70"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="8.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.9"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="C+"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="ELE1330"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Xử lý tín hiệu số"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="20"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="60"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="4.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.9"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="C+"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:textColor="@color/black"/>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="6"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="BAS1143"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Tiếng Anh A21"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="100"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="5.8"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="7.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="5.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.6"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="C+"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="7"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="BAS1153"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Lịch sử Đảng cộng sản Việt Nam"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="20"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="70"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="8.0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="6.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="7.2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="B"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="8"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="INT1359"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="Toán rời rạc 2"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="3"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="0"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="9dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="70"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="9.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="8.5"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:padding="1dp"
+                    android:text="" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="8.7"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:padding="1dp"
+                    android:text="C+"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="Đạt"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+        </TableLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
