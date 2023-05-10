@@ -6,7 +6,8 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ptit.Database.SQLiteHelper;
+import com.example.ptit.Database.PointDB;
+import com.example.ptit.Database.UserDB;
 
 public class IntroActivity extends AppCompatActivity {
     Handler h = new Handler();
@@ -14,8 +15,8 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-//        SQLiteHelper sqLiteHelper = new SQLiteHelper(getBaseContext());
-//        sqLiteHelper.onCreate(sqLiteHelper.getWritableDatabase());
+//        PointDB pointDB = new PointDB(getBaseContext());
+//        pointDB.onCreate(pointDB.getWritableDatabase());
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

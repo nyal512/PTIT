@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.xemdiem.DiemFragment">
+    <TextView
+        android:id="@+id/numHK"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#CBCBCB"
+        android:layout_marginTop="1dp"
+        android:gravity=""
+        android:text="Học kỳ 1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
+            android:maxHeight="200dp"
+            android:showDividers="middle|beginning|end"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="STT"
+                    android:layout_width="30dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="MM"
+                    android:gravity="center"
+                    android:layout_width="75dp"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="TM"
+                    android:layout_width="250dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="TC"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%CC"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%KT"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%TH"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%BT"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%Thi"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="Điểm CC"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="60dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%ĐiềmKT"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="70dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%ĐiểmTH"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="70dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="%ĐiểmBT"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="70dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="ThiL1"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="ThiL2"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="TK(10)"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="50dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:padding="1dp"
+                    android:text="TK(CH)"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="50dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="#2D8DCD"
+                    android:text="KQ"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#FFFFFF" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/point_list"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/row_point_item" />
+        </TableLayout>
+    </HorizontalScrollView>
+        <TextView
+            android:id="@+id/tbHK"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:background="#ECECEB"
+            android:gravity=""
+            android:text="Điểm trung bình học kỳ hệ 4:     2.42"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <TextView
+            android:id="@+id/GPA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ECECEB"
+            android:layout_marginTop="1dp"
+            android:gravity=""
+            android:text="Điểm trung bình tích lũy (hệ 4): 2.42"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.406" />
+</LinearLayout>

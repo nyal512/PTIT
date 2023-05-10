@@ -2,7 +2,6 @@ package com.example.ptit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -10,7 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ptit.Database.SQLiteHelper;
+import com.example.ptit.Database.UserDB;
 import com.example.ptit.model.User;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -23,12 +22,9 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         username = findViewById(R.id.addUser);
         password = findViewById(R.id.addPassword);
-        String tmp = username.getText().toString();
 
         btnRegister = findViewById(R.id.btnRegister);
-        btnRegister.setOnClickListener(v -> {
-            onClickRegister();
-        });
+        btnRegister.setOnClickListener(v -> onClickRegister());
     }
 
     private void onClickRegister() {
@@ -52,8 +48,8 @@ public class RegisterActivity extends AppCompatActivity {
             toast.show();
         }
         else{
-            SQLiteHelper sqLiteHelper=new SQLiteHelper(RegisterActivity.this);
-            sqLiteHelper.addUser(u);
+            UserDB userDB=new UserDB(RegisterActivity.this);
+            userDB.addUser(u);
             Toast toast = Toast.makeText(RegisterActivity.this,"đăng ký thành công" ,Toast.LENGTH_SHORT);
             toast.show();
             Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);

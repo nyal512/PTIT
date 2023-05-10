@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.example.ptit.model.User;
 
-public class SQLiteHelper extends SQLiteOpenHelper {
+public class UserDB extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "saq";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_NAME = "users";
@@ -18,7 +18,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     private static final String KEY_USERNAME = "username";
     private static final String KEY_PASSWORD = "password";
 
-    public SQLiteHelper(@Nullable Context context) {
+    public UserDB(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
