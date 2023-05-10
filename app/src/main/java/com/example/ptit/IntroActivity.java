@@ -15,8 +15,6 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-//        PointDB pointDB = new PointDB(getBaseContext());
-//        pointDB.onCreate(pointDB.getWritableDatabase());
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

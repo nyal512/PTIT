@@ -45,7 +45,7 @@ public class PointAdapter extends RecyclerView.Adapter<PointViewHolder> {
         holder.GPA.setText("Điểm trung bình tích lũy (hệ 4): "+GPA(list));
     }
 
-    private String GPA(List<List<Point>> list) {
+    String GPA(List<List<Point>> list) {
         int sumCredits = 0;
         Float sumPoints = 0.0F;
         for(List<Point> points:list){
@@ -89,7 +89,7 @@ public class PointAdapter extends RecyclerView.Adapter<PointViewHolder> {
         return GPA;
     }
 
-    private String tbHK(List<Point> points) {
+    String tbHK(List<Point> points) {
         int sumCredits = 0;
         Float sumPoints = 0.0F;
         for (Point point : points) {

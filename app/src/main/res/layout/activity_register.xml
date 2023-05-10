@@ -30,23 +30,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.228"
         app:srcCompat="@drawable/ptit"/>
+
     <TextView
         android:id="@+id/txtview"
-        android:layout_width="118dp"
-        android:layout_height="30dp"
-        android:text="Username:"
-        android:textSize="20dp"
+        android:layout_width="157dp"
+        android:layout_height="24dp"
+        android:text="Tên đăng nhập:"
         android:textColor="@color/black"
-        android:textStyle="bold" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"/>
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
+
     <TextView
         android:id="@+id/txtview2"
         android:layout_width="109dp"
         android:textColor="@color/black"
         android:layout_height="31dp"
-        android:text="Password:"
+        android:text="mật khẩu:"
         android:textSize="20sp"
         android:textStyle="bold" app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.149"

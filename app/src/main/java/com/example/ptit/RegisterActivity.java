@@ -17,7 +17,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText password;
     Button btnRegister;
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         username = findViewById(R.id.addUser);
@@ -27,33 +27,41 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(v -> onClickRegister());
     }
 
-    private void onClickRegister() {
+    public void onClickRegister() {
         User u = new User();
         u.setUsername(username.getText().toString());
         u.setPassword(password.getText().toString());
-        if(u.getUsername().isEmpty()){
-            Toast toast = Toast.makeText(RegisterActivity.this, "vui lòng nhập tên đăng nhập", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        else if(u.getPassword().isEmpty()){
-            Toast toast = Toast.makeText(RegisterActivity.this, "vui lòng nhập mật khẩu", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        else if(u.getUsername().length()<4){
-            Toast toast = Toast.makeText(RegisterActivity.this, "tên đăng nhập không phù hợp", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        else if(u.getPassword().length()<3){
-            Toast toast = Toast.makeText(RegisterActivity.this,"mật khẩu quá ngắn", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        else{
-            UserDB userDB=new UserDB(RegisterActivity.this);
+
+        int fieldCheck = checkRegistrationFields(u.getUsername(), u.getPassword());
+
+        if (fieldCheck == 0) {
+            Toast.makeText(RegisterActivity.this, "Vui lòng nhập tên đăng nhập", Toast.LENGTH_SHORT).show();
+        } else if (fieldCheck == 1) {
+            Toast.makeText(RegisterActivity.this, "Vui lòng nhập mật khẩu", Toast.LENGTH_SHORT).show();
+        } else if (fieldCheck == 2) {
+            Toast.makeText(RegisterActivity.this, "Tên đăng nhập không phù hợp", Toast.LENGTH_SHORT).show();
+        } else if (fieldCheck == 3) {
+            Toast.makeText(RegisterActivity.this, "Mật khẩu quá ngắn", Toast.LENGTH_SHORT).show();
+        } else {
+            UserDB userDB = new UserDB(RegisterActivity.this);
             userDB.addUser(u);
-            Toast toast = Toast.makeText(RegisterActivity.this,"đăng ký thành công" ,Toast.LENGTH_SHORT);
-            toast.show();
-            Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+            Toast.makeText(RegisterActivity.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);
+        }
+    }
+
+    public int checkRegistrationFields(String username, String password) {
+        if (username.isEmpty()) {
+            return 0;
+        } else if (password.isEmpty()) {
+            return 1;
+        } else if (username.length() < 4) {
+            return 2;
+        } else if (password.length() < 3) {
+            return 3;
+        } else {
+            return -1;
         }
     }
 }
